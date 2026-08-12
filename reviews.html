@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reviews & references — J.W. Cleaning Services</title>
+<meta name="description" content="Properties served by J.W. Cleaning Services, and a form for managers and residents to leave a review.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <a class="wordmark" href="index.html">J.W. <span>Cleaning</span>
+      <small>Window care &middot; NW Houston</small>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="reviews.html">Reviews &amp; references</a>
+      <a href="agreement.html">Service agreement</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="band band--wash">
+    <div class="shell">
+      <span class="eyebrow">Reviews &amp; references</span>
+      <h1 style="font-size:var(--step-3);max-width:18ch;margin-bottom:14px;">Who we work for, and what they said.</h1>
+      <p style="font-size:var(--step-1);color:var(--ink-soft);max-width:58ch;margin:0;">A new company with a short list is better than a long list you cannot verify. Everything here is checkable, and property contacts are available on request.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <div class="band__head">
+        <span class="eyebrow">References</span>
+        <h2>Properties served.</h2>
+        <p>Contact details for the on-site manager are available to prospective clients on request.</p>
+      </div>
+
+      <!-- Add a .ref block per property as accounts land. Delete the .empty block once the first one is in. -->
+      <div class="reflist">
+        <div class="empty">
+          <h3>No properties listed yet.</h3>
+          <p>J.W. Cleaning is new. Rather than pad this page, we would rather be the vendor your regional manager hears about from the property down the road in six months.</p>
+          <p>If you are considering a first job, start small. One building, one turn, one common-area visit. Judge the work, then decide whether to hand over the rest.</p>
+          <a class="btn btn--sm" href="contact.html">Request a bid</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--wash">
+    <div class="shell">
+      <div class="band__head">
+        <span class="eyebrow">Reviews</span>
+        <h2>Leave a review.</h2>
+        <p>For managers and residents who have had work done. Reviews are read before they are published, and we do not remove ones we dislike.</p>
+      </div>
+
+      <form class="form" data-jw-form data-kind="review">
+        <div class="row">
+          <div class="field">
+            <label for="rv-name">Your name</label>
+            <input id="rv-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="rv-property">Property</label>
+            <input id="rv-property" name="property" type="text" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="rv-role">Your role</label>
+            <select id="rv-role" name="role">
+              <option value="">Select one</option>
+              <option>Property manager</option>
+              <option>Assistant manager</option>
+              <option>Maintenance supervisor</option>
+              <option>Regional manager</option>
+              <option>Resident</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="rv-rating">Rating</label>
+            <select id="rv-rating" name="rating" required>
+              <option value="">Select one</option>
+              <option value="5">5 &mdash; excellent</option>
+              <option value="4">4 &mdash; good</option>
+              <option value="3">3 &mdash; fine</option>
+              <option value="2">2 &mdash; below expectations</option>
+              <option value="1">1 &mdash; poor</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="rv-body">Your review</label>
+          <textarea id="rv-body" name="body" required></textarea>
+        </div>
+
+        <div class="field">
+          <label for="rv-email">Email</label>
+          <input id="rv-email" name="email" type="email" autocomplete="email" required>
+          <span class="hint">Used to verify the review is real. Not published, not added to any list.</span>
+        </div>
+
+        <label class="hp" aria-hidden="true">Company website <input type="text" name="company_website" tabindex="-1" autocomplete="off"></label>
+
+        <button class="btn" type="submit">Submit review</button>
+        <p class="formnote">Reviews are moderated for authenticity, not for tone. Published with your first name, role, and property.</p>
+        <div class="status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="shell">
+    <div class="foot__grid">
+      <div>
+        <h4>J.W. Cleaning Services</h4>
+        <p>Ground-level window cleaning for apartment communities and storefronts across northwest Houston. Based in Tomball, Texas.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="reviews.html">Reviews &amp; references</a></li>
+          <li><a href="agreement.html">Service agreement</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <!-- TODO: replace both with real details before launch -->
+        <ul>
+          <li><a href="tel:+12810000000">(281) 000-0000</a></li>
+          <li><a href="mailto:bids@jwcleaning.com">bids@jwcleaning.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__legal">
+      <p>&copy; 2026 J.W. Cleaning Services</p>
+      <p>Tomball, Texas &middot; Serving the north and northwest side</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+<script src="assets/js/form.js"></script>
+</body>
+</html>

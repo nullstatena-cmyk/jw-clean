@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request a bid — J.W. Cleaning Services</title>
+<meta name="description" content="Send your property details and get a window cleaning bid within one business day. Serving apartment communities across northwest Houston.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <a class="wordmark" href="index.html">J.W. <span>Cleaning</span>
+      <small>Window care &middot; NW Houston</small>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="reviews.html">Reviews &amp; references</a>
+      <a href="agreement.html">Service agreement</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="band band--wash">
+    <div class="shell">
+      <span class="eyebrow">Contact</span>
+      <h1 style="font-size:var(--step-3);max-width:18ch;margin-bottom:14px;">Request a bid.</h1>
+      <p style="font-size:var(--step-1);color:var(--ink-soft);max-width:58ch;margin:0;">Unit count and building height get you a number. Everything else is optional and only makes the bid sharper.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <form class="form" data-jw-form data-kind="bid">
+
+        <div class="row">
+          <div class="field">
+            <label for="c-name">Your name</label>
+            <input id="c-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="c-title">Title</label>
+            <input id="c-title" name="title" type="text" autocomplete="organization-title" placeholder="Property manager">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input id="c-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="c-phone">Phone</label>
+            <input id="c-phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="c-property">Property name</label>
+          <input id="c-property" name="property" type="text" required>
+        </div>
+
+        <div class="field">
+          <label for="c-address">Property address</label>
+          <input id="c-address" name="address" type="text" autocomplete="street-address" required>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="c-units">Approximate unit count</label>
+            <input id="c-units" name="units" type="number" min="1" step="1">
+          </div>
+          <div class="field">
+            <label for="c-stories">Number of stories</label>
+            <select id="c-stories" name="stories" required>
+              <option value="">Select one</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4+">4 or more</option>
+            </select>
+            <span class="hint">We reach two floors from the ground. Taller buildings still work if the scope is ground-level glass.</span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Scope</label>
+          <div class="checks">
+            <label class="check"><input type="checkbox" name="scope" value="Make-ready turns"> Make-ready turns</label>
+            <label class="check"><input type="checkbox" name="scope" value="Common areas"> Common areas</label>
+            <label class="check"><input type="checkbox" name="scope" value="Storefront"> Storefront</label>
+            <label class="check"><input type="checkbox" name="scope" value="Not sure yet"> Not sure yet</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="c-frequency">Frequency</label>
+          <select id="c-frequency" name="frequency">
+            <option value="">Select one</option>
+            <option>One-time</option>
+            <option>As-needed (make-readies)</option>
+            <option>Monthly</option>
+            <option>Quarterly</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="c-notes">Anything else</label>
+          <textarea id="c-notes" name="notes" placeholder="Gate codes, access constraints, timeline, current vendor situation."></textarea>
+        </div>
+
+        <label class="hp" aria-hidden="true">Company website <input type="text" name="company_website" tabindex="-1" autocomplete="off"></label>
+
+        <button class="btn" type="submit">Send request</button>
+        <p class="formnote">Replies within one business day. If it is urgent, call the number in the footer.</p>
+        <div class="status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="band band--wash">
+    <div class="shell">
+      <div class="band__head">
+        <span class="eyebrow">Before you ask</span>
+        <h2>Three things worth knowing up front.</h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>Payment terms</h3>
+          <p>Net 30 from invoice date, one invoice per property per month. No deposit required to start, and no charge for a bid or a walkthrough.</p>
+        </article>
+        <article class="card">
+          <h3>Scheduling</h3>
+          <p>Recurring work runs the same day each cycle. Make-readies are usually turned inside 48 hours of the unit being released to us.</p>
+        </article>
+        <article class="card">
+          <h3>Reach</h3>
+          <p>Ground and second floor, roughly 25 feet from grade. If part of your property is out of reach we will scope around it rather than quietly skip it.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="shell">
+    <div class="foot__grid">
+      <div>
+        <h4>J.W. Cleaning Services</h4>
+        <p>Ground-level window cleaning for apartment communities and storefronts across northwest Houston. Based in Tomball, Texas.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="reviews.html">Reviews &amp; references</a></li>
+          <li><a href="agreement.html">Service agreement</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <!-- TODO: replace both with real details before launch -->
+        <ul>
+          <li><a href="tel:+12810000000">(281) 000-0000</a></li>
+          <li><a href="mailto:bids@jwcleaning.com">bids@jwcleaning.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__legal">
+      <p>&copy; 2026 J.W. Cleaning Services</p>
+      <p>Tomball, Texas &middot; Serving the north and northwest side</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+<script src="assets/js/form.js"></script>
+</body>
+</html>
